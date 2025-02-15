@@ -1,2 +1,14 @@
 flask
 requests
+python-dotenv
+fastapi
+beautifulsoup4
+Markdown
+pandas
+numpy
+pytesseract
+duckdb
+docstring_parser
+pathlib
+openai
+sentence_transformers

@@ -1,17 +1,20 @@
-# Use a Python base image
-FROM python:3.10
+# Use the official Python image
+FROM python:3.9
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
 # Copy all files into the container
-COPY . /app
+COPY . .
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose the port
+# Ensure python-dotenv is installed
+RUN pip install python-dotenv
+
+# Expose port
 EXPOSE 8000
 
-# Command to run the app
+# Command to run the application
 CMD ["python", "main.py"]
