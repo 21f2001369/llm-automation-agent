@@ -12,3 +12,4 @@ docstring_parser
 pathlib
 openai
 sentence_transformers
+uvicorn
